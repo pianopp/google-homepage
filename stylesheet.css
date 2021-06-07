@@ -9,5 +9,5 @@
         display: block;
     }
 .push {
-        margin-left: auto;
+        justify-content: flex-end;
     }
