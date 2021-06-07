@@ -15,7 +15,7 @@ body {
 
 .main-nav a {
     padding: 15px;
-    display: block;
+    display: inline-block;
 }
 
 .push {
