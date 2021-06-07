@@ -1,8 +1,13 @@
 .main-nav {
-    display: flex;
-}
-    
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+.main-nav a {
+         padding: .5em 1em;
+        display: block;
+    }
 .push {
-    margin-left: auto;
-}
-  
+        margin-left: auto;
+    }
