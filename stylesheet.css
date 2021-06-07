@@ -6,8 +6,8 @@ body {
     margin: 0;
 }
 
-a:-webkit-any-link {
-    color: -webkit-link;
+a:link {
+    color: grey;
     cursor: pointer;
     text-decoration: underline;
     text-decoration-line: underline;
