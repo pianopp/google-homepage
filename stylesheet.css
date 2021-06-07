@@ -44,8 +44,13 @@ a:active {
 }
 
 #ip2 {
+    position: relative;
     border-radius: 25px;
-    border: 2px solid grey padding: 20px;
-    width: 200px;
-    height: 15px;
+    border: 1px transparent grey padding: 20px;
+    width: auto;
+    max-width: 548px height: 44px;
+}
+
+#ip2.hover {
+    box-shadow: 3px rgb(219, 219, 219);
 }
