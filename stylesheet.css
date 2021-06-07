@@ -6,12 +6,14 @@ body {
     margin: 0;
 }
 
-a:link {
-    text-decoration: none;
-}
-
-a:hover {
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
     text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
 }
 
 .main-nav {
