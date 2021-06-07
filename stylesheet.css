@@ -8,12 +8,19 @@ body {
 
 a:link {
     color: grey;
-    cursor: pointer;
+    text-decoration: none;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:hover {
     text-decoration: underline;
-    text-decoration-line: underline;
-    text-decoration-thickness: initial;
-    text-decoration-style: initial;
-    text-decoration-color: initial;
+}
+
+a:active {
+    text-decoration: underline;
 }
 
 .main-nav {
