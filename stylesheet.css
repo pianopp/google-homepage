@@ -68,6 +68,7 @@ a:active {
 
 ul {
     list-style-type: none;
+    display: inline-block;
     padding: 0px;
     margin: 0px;
 }
@@ -89,6 +90,15 @@ ul {
     opacity: 0.5;
 }
 
+#searchIcon {
+    opacity: 0.5;
+    z-index: 1;
+    margin-top: -32px;
+    padding-left: 10px;
+    max-width: 75%;
+    max-height: 75%;
+}
+
 .userIcon {
     border-radius: 50%;
 }
@@ -96,7 +106,20 @@ ul {
 .searchArea {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
     align-items: center;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: auto;
+    width: auto;
+    max-height: 92px;
+    max-width: 272px;
 }
 
 .searchBar {
@@ -108,11 +131,68 @@ ul {
     z-index: 3;
     height: 44px;
     margin: 0 auto;
-    width: 482px;
-    width: auto;
+    width: 584px;
+    text-indent: 8%;
+    margin-top: 26px;
 }
 
 textarea:focus,
 input:focus {
     outline: none;
+}
+
+.searchBar:hover,
+button:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+    border-color: rgba(223, 225, 229, 0)
+}
+
+.searchButtons {
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+.searchButton {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.footer {
+    background: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0 20px;
+    height: 50px;
+    font: rgb(151, 151, 151);
+}
+
+.footer-left a {
+    padding: 15px;
+    display: inline-block;
+}
+
+.footer-right a {
+    padding: 15px;
+    display: inline-block;
 }
