@@ -2,19 +2,34 @@
 <link href="stylesheet.css" rel="stylesheet">
 
 <body>
-    <nav>
-        <ul class="main-nav">
-            <li><a href="">About</a></li>
-            <li><a href="">Store</a></li>
-            <li class="push"><a href="">Images</a></li>
-            <li class="push"><a href="">Gmail</a></li>
-            <li class="push">
-                <a href=""><img src="./outline_apps_black_24dp.png"></a>
-            </li>
-        </ul>
-    </nav>
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
-    <form><input type="text" id="ip2" /></form>
+    <div class="navbar">
+        <div class="container">
+            <div class="left-container">
+                <ul class="nav-left">
+                    <li class="left"><a href="">About</a></li>
+                    <li class="left"><a href="">Store</a></li>
+                </ul>
+            </div>
+            <div class="right-container">
+                <ul class="nav-right">
+                    <li class="push"><a href="">Gmail</a></li>
+                    <li class="push"><a href="">Images</a></li>
+                    <li class="push">
+                        <a href=""><img class="apps" src="./outline_apps_black_24dp.png"></a>
+                    </li>
+                    <li class="push">
+                        <a href=""><img class="userIcon" src="./userIcon.png"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="searchArea">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
+        <form>
+            <input type="text" id="searchBar" class="searchBar"><br>
+        </form>
+    </div>
 </body>
 
 </html>
